@@ -83,13 +83,13 @@ sudo docker run --name kibana-02 --net elastic -p 5601:5601 docker.elastic.co/ki
 
 Al finalizar la preparación del contenedor se mostrará en terminal un mensaje similar al siguiente:
 
-![Untitled](Elasticsearch%2025f264d0243c48bab4e01af5c3b7131c/Untitled.png)
+![Untitled](https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/imagenes-de-soporte/consola-kibana.png)
 
 Este mensaje nos indica el puerto donde tendremos corriendo el servicio de Kibana.  La interfaz gráfica corriendo en el navegador nos pedirá 
 
-![Untitled](Elasticsearch%2025f264d0243c48bab4e01af5c3b7131c/Untitled%201.png)
+![Untitled](https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/imagenes-de-soporte/kibana-cred.png)
 
-![Untitled](Elasticsearch%2025f264d0243c48bab4e01af5c3b7131c/Untitled%202.png)
+![Untitled](https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/imagenes-de-soporte/kibana-login.png)
 
 # ELK con Docker sin certificados de seguridad
 
@@ -136,19 +136,21 @@ Ejecutamos el siguiente comando
 docker compose up
 ```
 
-![Untitled](Elasticsearch%2025f264d0243c48bab4e01af5c3b7131c/Untitled%203.png)
+![Untitled](https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/imagenes-de-soporte/elastic-docker-compose.png)
 
 En terminal deberían mostrarse mensajes similares
 
 # Manejo de datos con Kibana
 
+Ya corriendo Elasticsearch mediante docker, podemos utilizar Kibana como interfaz gráfica para interactuar con la base de datos.
+
 ### Carga de datos
 
 Se cargará un archivo JSON, que contiene 50,000  objetos JSON separados por salto de línea.
 
-![Untitled](Elasticsearch%2025f264d0243c48bab4e01af5c3b7131c/Untitled%204.png)
+![Untitled](https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/imagenes-de-soporte/elastic-json.png)
 
-![Untitled](Elasticsearch%2025f264d0243c48bab4e01af5c3b7131c/Untitled%205.png)
+![Untitled](https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/imagenes-de-soporte/elastic-files.png)
 
 ### Consultas a la base de datos
 
@@ -344,7 +346,7 @@ Obtenemos
 }
 ```
 
-![Untitled](Elasticsearch%2025f264d0243c48bab4e01af5c3b7131c/Untitled%206.png)
+![Untitled](https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/imagenes-de-soporte/elastic-busqueda.png)
 
 ### Insertamos objetos en la base de datos
 
