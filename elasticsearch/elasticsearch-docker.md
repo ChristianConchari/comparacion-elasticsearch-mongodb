@@ -16,11 +16,9 @@ Creamos una red de Docker para conectar Kibana y Elasticsearch posteriormente
 docker network create elastic
 ```
 
-<aside>
-💡 En caso de existir errores de memoria en la máquina host, se debe ejecutar el siguiente comando:
-sudo sysctl -**w** vm.max_map_count=262144
+En caso de existir errores de memoria en la máquina host, se debe ejecutar el siguiente comando:
+```sudo sysctl -w vm.max_map_count=262144```
 
-</aside>
 
 Corremos la imagen de elastic search
 
