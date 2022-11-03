@@ -28,21 +28,21 @@ mongo localhost:27017
 
 Se establece conexión con la base de datos
 
-![Untitled](MongoDB%20con%20Docker%20af44d099f7344594b8d68d66e01e201a/Untitled.png)
+![Untitled](https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/imagenes-de-soporte/conexion-mongo.png)
 
 Creamos una nueva base de datos y una nueva colección
 
-![Untitled](MongoDB%20con%20Docker%20af44d099f7344594b8d68d66e01e201a/Untitled%201.png)
+![Untitled](https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/imagenes-de-soporte/nueva-coleccion-mongo.png)
 
 Cargamos los datos a partir de un documento JSON
 
-![Untitled](MongoDB%20con%20Docker%20af44d099f7344594b8d68d66e01e201a/Untitled%202.png)
+![Untitled](https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/imagenes-de-soporte/cargar-json-mongo.png)
 
 La base de datos se presentará de manera visual de la siguiente manera
 
-![Untitled](MongoDB%20con%20Docker%20af44d099f7344594b8d68d66e01e201a/Untitled%203.png)
+![Untitled](https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/imagenes-de-soporte/coleccion-mongo.png)
 
-![Untitled](MongoDB%20con%20Docker%20af44d099f7344594b8d68d66e01e201a/Untitled%204.png)
+![Untitled](https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/imagenes-de-soporte/tabla-mongo.png)
 
 ### Consultas a la base de datos
 
@@ -52,16 +52,16 @@ Ingresando la siguiente consulta
 {agencia: "Santa Cruz", $and:[{fecha: {$gte: "2005-01-01"}}, {fecha: {$lte: "2005-12-31"}}]}
 ```
 
-![Untitled](MongoDB%20con%20Docker%20af44d099f7344594b8d68d66e01e201a/Untitled%205.png)
+![Untitled](https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/imagenes-de-soporte/busqueda-mongo.png)
 
-![Untitled](MongoDB%20con%20Docker%20af44d099f7344594b8d68d66e01e201a/Untitled%206.png)
+![Untitled](https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/imagenes-de-soporte/stats-mongo.png)
 
-![Untitled](MongoDB%20con%20Docker%20af44d099f7344594b8d68d66e01e201a/Untitled%207.png)
+![Untitled](https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/imagenes-de-soporte/time-mongo.png)
 
 ### Actualización de datos
 
-![Untitled](MongoDB%20con%20Docker%20af44d099f7344594b8d68d66e01e201a/Untitled%208.png)
+![Untitled](https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/imagenes-de-soporte/edit-mongo.png)
 
 ### Eliminación de datos
 
-![Untitled](MongoDB%20con%20Docker%20af44d099f7344594b8d68d66e01e201a/Untitled%209.png)
+![Untitled](https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/imagenes-de-soporte/delete-mongo.png)
