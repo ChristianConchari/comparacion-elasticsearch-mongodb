@@ -4,5 +4,7 @@ Se realizó una comparación entre **MongoDB** y **Elasticsearch**, dos bases de
 
 <div align="center">
   <a href="https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/tree/master/elasticsearch"><b>Código - Elasticsearch</b></a> |
-  <a href="https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/tree/master/mongodb"><b>Código - MongoDB</b></a> 
+  <a href="https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/tree/master/mongodb"><b>Código - MongoDB</b></a> |
+  <a href="https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/antecedentes.md"><b>Antecedentes</b></a> 
+  
 </div>
