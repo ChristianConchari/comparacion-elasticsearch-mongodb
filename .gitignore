@@ -1,0 +1,3 @@
+# ignore json data directories
+/json-generated-data-elastic
+/json-generated-data
