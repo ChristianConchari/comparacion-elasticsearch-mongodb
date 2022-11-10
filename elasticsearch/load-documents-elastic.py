@@ -56,7 +56,7 @@ for i, json_file in enumerate(sorted(os.listdir("../json-generated-data-elastic"
     try:
         helpers.bulk(es, file_dict, index=f"extracto_cuenta_{args.n_docs}m")
     except:
-        print(file_dict)
+        print(json_file)
         pass
     
     if i+1 == args.n_docs:
