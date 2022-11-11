@@ -11,28 +11,34 @@ args = parser.parse_args()
 
 def declare_index(n_index):
     mapping = {
-            "properties": {
-                "fecha": {
-                    "type": "date",
-                    "format": "yyyy-MM-dd HH:mm:ss"
-                },
-                "agencia": {
-                    "type": "keyword"
-                },
-                "monto": {
-                    "type": "float"
-                },
-                "descripcion": {
-                    "type": "text"
-                },
-                "saldo": {
-                    "type": "float"
-                },
-                "nota": {
-                    "type": "text"
-                }
+        "properties": {
+            "fecha": {
+                "type": "date",
+                "format": "yyyy-MM-dd HH:mm:ss",
+                "index": "false"
+            },
+            "agencia": {
+                "type": "keyword",
+                "index": "false"
+            },
+            "monto": {
+                "type": "float",
+                "index": "false"
+            },
+            "descripcion": {
+                "type": "text",
+                "index": "false"
+            },
+            "saldo": {
+                "type": "float",
+                "index": "false"
+            },
+            "nota": {
+                "type": "text",
+                "index": "false"
             }
-    }
+        }
+    }   
 
     return es.indices.create(
         index=n_index,
