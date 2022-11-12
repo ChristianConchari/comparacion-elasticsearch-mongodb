@@ -15,7 +15,7 @@ def declare_index(n_index):
             "fecha": {
                 "type": "date",
                 "format": "yyyy-MM-dd HH:mm:ss",
-                "index": "false"
+                "index": "true"
             },
             "agencia": {
                 "type": "keyword",
@@ -27,7 +27,7 @@ def declare_index(n_index):
             },
             "descripcion": {
                 "type": "text",
-                "index": "false"
+                "index": "true"
             },
             "saldo": {
                 "type": "float",
@@ -35,7 +35,7 @@ def declare_index(n_index):
             },
             "nota": {
                 "type": "text",
-                "index": "false"
+                "index": "true"
             }
         }
     }   
@@ -49,7 +49,7 @@ es = Elasticsearch("http://127.0.0.1:9200")
 
 print(f"Connected to ElasticSearch cluster `{es.info().body['cluster_name']}`")
 
-declare_index(f"extracto_cuenta_{args.n_docs}m")
+declare_index(f"extracto_cuenta_{args.n_docs}m_3idx")
 
 start_time = time.time()
 for i, json_file in enumerate(sorted(os.listdir("../json-generated-data-elastic"))):
@@ -59,7 +59,7 @@ for i, json_file in enumerate(sorted(os.listdir("../json-generated-data-elastic"
     print(f'Cargando el documento {i+1}/{args.n_docs}')
     
     try:
-        helpers.bulk(es, file_dict, index=f"extracto_cuenta_{args.n_docs}m")
+        helpers.bulk(es, file_dict, index=f"extracto_cuenta_{args.n_docs}m_3idx")
     except:
         print(json_file)
         pass
