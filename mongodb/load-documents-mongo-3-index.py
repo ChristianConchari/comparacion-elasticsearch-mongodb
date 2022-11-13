@@ -11,9 +11,6 @@ args = parser.parse_args()
 
 def declare_indexes(coll):
     coll.create_index('fecha')
-    coll.create_index('agencia')
-    coll.create_index('monto')
-    coll.create_index('saldo')
     coll.create_index('descripcion')
     coll.create_index('nota')
 
@@ -22,8 +19,8 @@ def declare_indexes(coll):
 client = MongoClient('localhost', 27017)
 
 db = client[f"test_mongo"]
-db.create_collection(f"extracto_cuenta_{args.n_docs}m")
-collection = db[f"extracto_cuenta_{args.n_docs}m"]
+db.create_collection(f"extracto_cuenta_{args.n_docs}m_3idx")
+collection = db[f"extracto_cuenta_{args.n_docs}m_3idx"]
 
 start_time = time.time()
 for i, json_file in enumerate(sorted(os.listdir("../json-generated-data"))):
