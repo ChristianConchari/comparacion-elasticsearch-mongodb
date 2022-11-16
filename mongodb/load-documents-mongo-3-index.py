@@ -12,7 +12,7 @@ args = parser.parse_args()
 def declare_indexes(coll):
     coll.create_index('fecha')
     coll.create_index('descripcion')
-    coll.create_index('nota')
+    coll.create_index([('nota', 'text')])
 
     return print(f"índices creados en {coll}")
 
