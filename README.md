@@ -9,3 +9,20 @@ buscando elegir la mejor opción para el caso conceptual de un extracto de cuent
   <a href="https://github.com/ChristianConchari/comparacion-elasticsearch-mongodb/blob/master/antecedentes.md"><b>Antecedentes</b></a> 
   
 </div>
+
+## Generación de datos aleatorios en formato JSON
+
+Para generar 30 documentos, donde cada uno contenga un millón de objetos JSON, debe ejecutar el siguiente script:
+
+```
+python random-json-data-generation.py -n 30
+```
+El parámetro ```n``` define la cantidad de documentos a generase. El script anterior, también se encargará de generar el directorio ```json-generated-data```.
+
+Para convertir los archivos generados al formato requerido para ser cargados a Elasticsearch debe ejecutarse el siguiente script:
+
+```
+python convert-json-to-elastic-format.py
+```
+
+El script leerá los archivos en formato JSON generados anteriormente, y los adaptará para la estructura soportada por Elasticsearch en el directorio ```json-generated-data-elastic```.
