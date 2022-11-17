@@ -26,3 +26,11 @@ python convert-json-to-elastic-format.py
 ```
 
 El script leerá los archivos en formato JSON generados anteriormente, y los adaptará para la estructura soportada por Elasticsearch en el directorio ```json-generated-data-elastic```.
+
+En el archivo ```requirements.txt`` se encuentran las librerias de python correspondientes a Pymongo y el cliente de Python de Elasticsearch, entre otras librerías utilizadas en el proyecto. Para instalarlas, ejecutar el siguiente comando:
+
+```
+pip install -r requirements.txt
+```
+
+Se recomienda trabajar el proyecto dentro de un [ambiente virtual](https://docs.python.org/3/library/venv.html) para evitar conflictos con otras versiones de las librerias.
