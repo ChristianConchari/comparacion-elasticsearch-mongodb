@@ -1,0 +1,4 @@
+pymongo==3.7.2
+elasticsearch==8.4.3
+lorem-text==2.1
+numpy==1.23.1
