@@ -45,12 +45,12 @@ Se deben cumplir los siguientes requerimientos:
 
 ## Ejemplo: Datos de un extracto bancario
 
-- Fecha
-- Oficina
-- Descripción
-- Saldo total
-- Monto
-- Nota
+- **Fecha** (Fecha entre 01/01/1950 y 01/01/2022)
+- **Oficina** (Lista de departamentos de Bolivia)
+- **Descripción** (Lista compuesta por 30 elementos con diferentes descripciones de operaciones bancarias)
+- **Saldo total** (Número aleatorio de distribución uniforme entre 10.00 y 400000.00)
+- **Monto** (Número aleatorio de distribución uniforme entre 0.00, 10000000.00)
+- **Nota** (Una cantidad aleatoria entre 1 y 13 palabras del Lorem Ipsum) 
 
 
 # Matriz de comparación
@@ -95,28 +95,30 @@ Considerando una escala del 1 al 5 para la conveniencia de cada opción de base 
 | Soporte para aprendizaje automático	| 5	| 5	| 2 |
 | Velocidad de escritura	| 3	| 2	| 4 |
 | Velocidad de lectura	| 5	| 5	| 3 |
-| Capacidad como base de datos primaria	| 4	| 3	| 4 |
 | Tamaño máximo de documento	| 4	| 5	| 4 |
+| Capacidad de compresión de datos	| 4	| 4	| 4 |
+| Capacidad de indexación	| 4	| 5	| 4 |
+
 
 **Tabla 3.** Matriz de decisión ponderada
 
 |  | MongoDB Community server | Elasticsearch | Cassandra | Peso |
 | --- | --- | --- | --- | --- |
-| Documentación/Comunidad | 12 | 12 | 9 | 3 |
-| Popularidad | 10 | 8 | 6 | 2 |
-| Soporte de lenguaje de programación | 20 | 20 | 16 | 4 |
+| Documentación/Comunidad | 20 | 20 | 15 | 5 |
+| Popularidad | 20 | 16 | 12 | 4 |
+| Soporte de lenguaje de programación | 15 | 15 | 12 | 3 |
 | Stack | 16 | 16 | 8 | 4 |
-| Flexibilidad del lenguaje de consulta | 12 | 15 | 12 | 3 |
+| Flexibilidad del lenguaje de consulta | 16 | 20 | 16 | 4 |
 | Curva de aprendizaje | 12 | 9 | 9 | 3 |
 | Escalamiento horizontal | 15 | 15 | 9 | 3 |
-| Soporte para aprendizaje automático | 20 | 20 | 8 | 4 |
+| Soporte para aprendizaje automático | 15 | 15 | 6 | 3 |
 | Velocidad de escritura | 15 | 10 | 20 | 5 |
 | Velocidad de lectura | 25 | 25 | 15 | 5 |
-| Capacidad como base de datos primaria | 16 | 12 | 16 | 4 |
 | Tamaño máximo de documento | 12 | 15 | 12 | 3 |
-| Puntaje final | 185 | 177 | 140 |  |
+| Capacidad de compresión de datos | 20 | 20 | 20 | 5 |
+| Capacidad de indexación | 20 | 25 | 20 | 5 |
+| Puntaje final | 221 | 221 | 174 |  |
 
-[matriz de desición - base de datos](https://docs.google.com/spreadsheets/d/1_f16qowUedWq8QG1XRIr_E1he0ZQiDf2LdPb43epQ7A/edit?usp=drivesdk)
 
 Según los resultados de la Tabla 3, se seleccionan **MongoDB** y **Elasticsearch** para llevar a cabo una comparación de rendimiento.
 
