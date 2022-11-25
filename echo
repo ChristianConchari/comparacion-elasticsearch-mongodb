@@ -1,0 +1,1 @@
+{"extracto_cuenta_10m":{"settings":{"index":{"codec":"best_compression","routing":{"allocation":{"include":{"_tier_preference":"data_content"}}},"number_of_shards":"1","provided_name":"extracto_cuenta_10m","creation_date":"1669395351646","number_of_replicas":"1","uuid":"ZJinmY5rQyuBZ2jr_6Ns5w","version":{"created":"8040399"}}}}}
